@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+}
+
+@layer utilities {
+    #toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-3;
+    }
+}
