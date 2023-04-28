@@ -22,7 +22,7 @@ const Navbar = () => {
     }
 
     return (
-        <div id className=' bg-transparent dark:bg-transparent uppercase text-gray-900 flex justify-between items-center w-full bg-white dark:text-gray-200 dark:bg-gray-900 overflow-hidden h-16 mx-auto px-6'>
+        <div id className=' bg-slate-200 dark:text-gray-200 dark:bg-slate-600 overflow-hidden h-16 uppercase text-gray-900 bg-primary-100 top-0 px-[30px] flex items-start justify-between max-w-full mx-auto z-100 xl:items-center rounded-b-md'>
             <div className='flex items-center p-4'>
                 <span className='mr-2 font-semibold'>Light</span>
                     <input type='checkbox' id='toggle' className='hidden' />
