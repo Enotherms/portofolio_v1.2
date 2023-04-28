@@ -2,7 +2,7 @@
 
     const Contact = () => {
     return (
-        <div id='contact' className='px-6'>
+        <div id='contact' className='px-6 pt-10 mb-60'>
             <h2 className='text-center mb-3 text-3xl font-semibold text-gray-900 dark:bg-slate-600 dark:text-slate-200'>Contact</h2>
             <div className='flex justify-center'>
                 <div className='w-1/2 border-b-4 rounded-lg border-b-sky-400 dark:border-b-gray-900'></div>

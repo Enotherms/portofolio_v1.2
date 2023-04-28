@@ -22,7 +22,7 @@ const Navbar = () => {
     }
 
     return (
-        <div id className='uppercase text-gray-900 flex justify-between items-center w-full bg-white dark:text-gray-200 dark:bg-gray-900 overflow-hidden h-16 mx-auto px-6 rounded-b-xl'>
+        <div id className=' bg-transparent dark:bg-transparent uppercase text-gray-900 flex justify-between items-center w-full bg-white dark:text-gray-200 dark:bg-gray-900 overflow-hidden h-16 mx-auto px-6'>
             <div className='flex items-center p-4'>
                 <span className='mr-2 font-semibold'>Light</span>
                     <input type='checkbox' id='toggle' className='hidden' />
@@ -34,16 +34,14 @@ const Navbar = () => {
                 <span className='ml-2 font-semibold'>Dark</span>
             </div>
             <ul className=' hidden md:flex font-semibold'>
-                <Link to="home" spy={true} smooth={true} duration={400} className="cursor-pointer p-4 hover:text-gray-900 hover:bg-gray-300 hover:rounded">Home</Link>
                 <Link to="contact" spy={true} smooth={true} duration={400} className="cursor-pointer p-4 hover:text-gray-900 hover:bg-gray-300 hover:rounded">Contact</Link>
                 <Link to="skill" spy={true} smooth={true} duration={400} className="cursor-pointer p-4 hover:text-gray-900 hover:bg-gray-300 hover:rounded">About</Link>
             </ul>
             <div onClick={handleNav} className='block md:hidden'>
                 {!nav ? <AiOutlineClose size={25}/> : <AiOutlineMenu size={25}/>}
             </div>
-            <div className={!nav ? 'fixed left-0 top-0 w-[60%] dark:text-gray-200 dark:bg-gray-900 rounded-r-xl shadow bg-white  h-full ease-in-out duration-500' : 'fixed Right-0 top-0 w-[60%] dark:text-gray-200 dark:bg-gray-900 rounded-r-xl shadow bg-white h-full ease-in-out duration-500 left-[-100%]'}>
+            <div className={!nav ? 'fixed left-0 top-0 w-[60%] dark:text-gray-200 dark:bg-gray-900 rounded-r-xl shadow mb-4 bg-white  h-full ease-in-out duration-500' : 'fixed Right-0 top-0 w-[60%] dark:text-gray-200 dark:bg-gray-900 rounded-r-xl shadow mb-4 bg-white h-full ease-in-out duration-500 left-[-100%]'}>
                 <ul className='p-4 uppercase flex flex-col'>
-                <Link to="home" spy={true} smooth={true} duration={400} className="cursor-pointer p-4 hover:text-gray-900 hover:bg-gray-300 hover:rounded">Home</Link>
                 <Link to="contact" spy={true} smooth={true} duration={400} className="cursor-pointer p-4 hover:text-gray-900 hover:bg-gray-300 hover:rounded">Contact</Link>
                 <Link to="skill" spy={true} smooth={true} duration={400} className="cursor-pointer p-4 hover:text-gray-900 hover:bg-gray-300 hover:rounded">About</Link>
                 </ul>
