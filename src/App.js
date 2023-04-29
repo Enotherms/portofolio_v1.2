@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Skill from "./components/Skill";
 import Contact from "./components/Contact";
 import { Footer } from "./components/Footer";
+import ScrollToTop from "react-scroll-to-top";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Contact />
       <Skill />
       <Footer />
+      <ScrollToTop className="font-semibold" smooth component={<p style={{ color: "blue" }}>UP</p>}/>
     </div>
   );
 }
